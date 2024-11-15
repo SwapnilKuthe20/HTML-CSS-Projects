@@ -49,7 +49,7 @@ li>a {
     text-decoration: none;
 }
 
-.active-link{
+.active-link {
     color: orangered;
     font-weight: bold;
 }
@@ -139,3 +139,53 @@ a,
     text-align: center;
 }
 
+@media (max-width : 768px) {
+    .nav-items {
+        flex-direction: column;
+        margin: 15px 0;
+        font-size: 30px;
+    }
+
+    .nav-fonts,
+    .logo {
+        font-size: 30px;
+        margin: 15px 0;
+    }
+
+    .sec1-headding {
+        padding-top: 50px;
+        margin-bottom: 15px;
+    }
+
+    .showcase {
+        min-height: 300px;
+        padding-bottom: 10px;
+    }
+    .search-sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    
+.input-box>input{
+    padding: 10px;
+}
+.Subscribe-btn{
+    padding: 10px;
+}
+.courses-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+}
