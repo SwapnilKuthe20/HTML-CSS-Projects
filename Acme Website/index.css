@@ -1,5 +1,127 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: rgb(7, 78, 55);
+    border-bottom: 2px solid orangered;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.nav-items {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    color: white;
+}
+
+.logo,
+.active-link {
+    color: orangered;
+    font-weight: bold;
+}
+
+.nav-links {
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+li>a {
+    text-decoration: none;
+}
+
+a,
+.sec1-headding,
+.sec1-desc,
+.newsletter-heading {
+    color: white;
+}
+
+.showcase {
+    min-height: 400px;
+    background-image: url('./src/Images/showcase.jpg');
+    color: white;
+    text-align: center;
+    background-size: cover;
+}
+
+.sec1-headding {
+    padding-top: 200px;
+    font-size: xx-large;
+}
+
+.sec1-desc {
+    margin-top: 20px;
+    line-height: 22px;
+}
+
+.newsletter {
+    background-color: rgb(7, 78, 55);
+    padding: 20px 0;
+}
+
+.search-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-box>input {
+    padding: 5px;
+    border: none;
+}
+
+.Subscribe-btn {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+.courses-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.box {
+    width: 300px;
+    text-align: center;
+}
+
+.box>h3 {
+    margin: 10px 0;
+}
+
+.box>p {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.courses-box {
+    padding: 20px 0;
+}
+
+.footer{
+    background-color: orangered;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
