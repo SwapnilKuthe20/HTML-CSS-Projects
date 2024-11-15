@@ -7,7 +7,7 @@
 }
 
 .navbar {
-    background-color: rgb(7, 78, 55);
+    background-color: #35424a;
     border-bottom: 2px solid orangered;
 }
 
@@ -17,17 +17,20 @@
     overflow: hidden;
 }
 
+.nav-fonts,
+.logo {
+    font-size: 30px;
+}
+
 .nav-items {
     display: flex;
-    font-size: 20px;
     justify-content: space-between;
     align-items: center;
     min-height: 70px;
     color: white;
 }
 
-.logo,
-.active-link {
+.logo {
     color: orangered;
     font-weight: bold;
 }
@@ -46,6 +49,11 @@ li>a {
     text-decoration: none;
 }
 
+.active-link{
+    color: orangered;
+    font-weight: bold;
+}
+
 a,
 .sec1-headding,
 .sec1-desc,
@@ -55,7 +63,7 @@ a,
 
 .showcase {
     min-height: 400px;
-    background-image: url('./src/Images/showcase.jpg');
+    background-image: url('../src/Images/showcase.jpg');
     color: white;
     text-align: center;
     background-size: cover;
@@ -63,7 +71,7 @@ a,
 
 .sec1-headding {
     padding-top: 200px;
-    font-size: xx-large;
+    font-size: 55px;
 }
 
 .sec1-desc {
@@ -72,8 +80,12 @@ a,
 }
 
 .newsletter {
-    background-color: rgb(7, 78, 55);
-    padding: 20px 0;
+    background-color: #35424a;
+    padding: 30px 0;
+}
+
+.newsletter-heading {
+    font-size: 22.5px;
 }
 
 .search-sec {
@@ -94,11 +106,16 @@ a,
     padding: 5px;
 }
 
+.courses {
+    padding: 20px;
+}
+
 .courses-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    padding: 20px 0;
 }
 
 .box {
@@ -115,13 +132,10 @@ a,
     line-height: 20px;
 }
 
-.courses-box {
-    padding: 20px 0;
-}
-
-.footer{
+.footer {
     background-color: orangered;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
+
