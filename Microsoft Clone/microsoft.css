@@ -148,3 +148,63 @@ ul>li {
 .shop-card>p {
     margin: 5px 0 10px 0;
 }
+
+.carbon-sec {
+    position: relative;
+    margin: 20px 0;
+}
+
+.carbon-sec>img {
+    width: 100%;
+}
+
+.carbon-typography>p {
+    margin: 10px 0 20px 0;
+}
+
+.carbon-typography>button {
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.carbon-typography {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 50%;
+    color: white;
+}
+
+.follow-sec {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-sec {
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    padding: 25px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 20px;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links>li {
+    list-style: none;
+    line-height: 40px;
+}
+
+li>a {
+    color: black;
+    font-size: 12px;
+}
