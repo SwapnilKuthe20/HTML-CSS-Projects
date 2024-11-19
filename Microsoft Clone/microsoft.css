@@ -81,7 +81,8 @@ ul>li {
     grid-gap: 20px;
 }
 
-.card>img {
+.card>img,
+.shop-card>img {
     width: 100%;
 }
 
@@ -93,7 +94,8 @@ ul>li {
     margin-bottom: 7px;
 }
 
-.card>button {
+.card>button,
+.shop-card>button {
     border: none;
     background-color: transparent;
     font-size: 15px;
@@ -107,7 +109,8 @@ ul>li {
     color: #0067b8;
 }
 
-.card>button:hover {
+.card>button:hover,
+.shop-card>button:hover {
     padding-right: 10px;
     transition: padding 1s;
 }
@@ -130,4 +133,18 @@ ul>li {
 
 .banner-sec>img {
     width: 100%;
+}
+
+.shop-card-sec {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.shop-card>h3 {
+    margin-top: 20px;
+}
+
+.shop-card>p {
+    margin: 5px 0 10px 0;
 }
