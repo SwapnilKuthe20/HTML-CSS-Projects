@@ -402,4 +402,10 @@ li>a {
     .left-navlinks .nav-items li:last-child {
         border-bottom: 0;
     }
+    
+    .banner-info {
+        font-size: 10px;
+        top: 8%;
+        left: 2%;
+    }
 }
