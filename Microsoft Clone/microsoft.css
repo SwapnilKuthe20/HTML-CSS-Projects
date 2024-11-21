@@ -348,8 +348,12 @@ li>a {
         margin-top: 15px;
     }
 
+    .footer-links>li {
+        line-height: 20px;
+    }
+
     .footer-inner .inner-footer-links {
-        gap: 10px;
+        gap: 8px;
         margin: 5px 5px 5px 7px;
     }
 
