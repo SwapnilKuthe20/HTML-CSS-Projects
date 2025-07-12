@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table-container {
+    width: 80%;
+    margin: auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+thead {
+    background-color: aquamarine;
+}
+
+tbody tr:nth-child(even) {
+    background-color: darkgray;
+}
+
+tbody tr:hover {
+    background-color: #e0f7fa;
+    cursor: pointer;
+}
+
+label[for="task2"]::before {
+    content: "🔒";
+}
+
+input:not([type="button"]) {
+    border: 1px solid red;
+}
+
+.para>p::first-letter {
+    color: darkgreen;
+    font-size: larger;
+}
+
+button:disabled {
+    background-color: aquamarine;
+    cursor: not-allowed;
+    padding: 7px;
+    color: black;
+}

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-layout {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+.sidebar {
+    width: 250px;
+    height: 400px;
+    overflow-y: auto;
+    background-color: #e86f6f;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.sticky-filter {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #ffcc00;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #10d4f2;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar>h2,
+.sidebar>ul {
+    padding: 20px;
+}
+
+ul>li {
+    list-style: none;
+}

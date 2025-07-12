@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Positioning </title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        background-color: aquamarine;
+    }
+
+    /* .relative-div {
+        position: relative;
+        top: 10px;
+        left: 20px;
+    } */
+    .parent-div {
+        width: 400px;
+        height: 400px;
+        background-color: #000;
+        color: aliceblue;
+        position: relative;
+        margin: auto;
+    }
+
+    .child-div {
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        color: inherit;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+</style>
+
+<body>
+
+    <div class="relative-div">
+        I moved 10px down and 20px right from where I was.
+    </div>
+
+    <div class="parent-div">
+        Parent (relative)
+        <div class="child-div">
+            I am top-right of my parent!
+        </div>
+    </div>
+    <div class="parent-div">
+        Parent (relative)
+        <div class="child-div">
+            I am top-right of my parent!
+        </div>
+    </div>
+    <div class="parent-div">
+        Parent (relative)
+        <div class="child-div">
+            I am top-right of my parent!
+        </div>
+    </div>
+    <div class="parent-div">
+        Parent (relative)
+        <div class="child-div">
+            I am top-right of my parent!
+        </div>
+    </div>
+    <div class="parent-div">
+        Parent (relative)
+        <div class="child-div">
+            I am top-right of my parent!
+        </div>
+    </div>
+    <div class="parent-div">
+        Parent (relative)
+        <div class="child-div">
+            I am top-right of my parent!
+        </div>
+    </div>
+
+    <div style="position: fixed; bottom: 10px; right: 10px;">
+        I'm a floating button!
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Display Property Deep Dive</title>
+    <style>
+        .box {
+            background-color: lightblue;
+            border: 2px solid #000;
+            margin: 10px;
+            padding: 10px;
+            color: black;
+        }
+
+        .block-box {
+            display: block;
+        }
+
+        .inline-box {
+            display: inline;
+        }
+
+        .inline-block-box {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+        }
+
+        label {
+            font-size: xx-large;
+            /* height: 30px;
+            width: 200px; */
+            padding: 30px;
+        }
+
+        input {
+            height: 20px;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>🔷 display: block</h2>
+    <div class="box block-box">Box 1 (Block)</div>
+    <div class="box block-box">Box 2 (Block)</div>
+
+    <h2>🔶 display: inline</h2>
+    <span class="box inline-box">Box 1 (Inline)</span>
+    <span class="box inline-box">Box 2 (Inline)</span>
+
+    <h2>🔷🔶 display: inline-block</h2>
+    <span class="box inline-block-box">Box 1 (Inline-Block)</span>
+    <span class="box inline-block-box">Box 2 (Inline-Block)</span>
+
+    <div>
+        <label for=""> Label : </label>
+
+        <img src="pic1.jpg" alt="pic_available">
+
+        <input type="text">
+
+        <div> Div BLock Element </div>
+    </div>
+
+
+
+</body>
+
+</html>
