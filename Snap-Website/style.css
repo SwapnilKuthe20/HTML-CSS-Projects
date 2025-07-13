@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: hsl(0, 0%, 41%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+ul>li>a {
+    text-decoration: none;
+}
+
+.nav-Link>li {
+    cursor: pointer;
+}
+
+.btn>button {
+    cursor: pointer;
+}
+
+.btn>.login-btn {
+    border: none;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.btn>button:nth-child(2) {
+    padding: 7px;
+    border-radius: 6px;
+}
+
+.banner-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.banner-sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 7%;
+    gap: 10px;
+}
+
+.banner-sec1,
+.banner-sec2 {
+    width: 50%;
+    padding: 10px;
+}
+
+.banner-sec1>h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.banner-sec1>p {
+    font-size: 16px;
+    padding-right: 30px;
+    line-height: 25px;
+}
+
+.learn-btn {
+    width: 100px;
+    padding: 14px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.banner-sec2 {
+    text-align: center;
+}
+
+.banner-sec2>img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.banner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner-logos>img {
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+    padding: 10px;
+}
+
+
+
+@media(max-width:768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    ul {
+        gap: 10px;
+    }
+
+    .banner-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-sec1 {
+        order: 2;
+    }
+
+    .banner-sec1>h1 {
+        font-size: 40px;
+
+    }
+
+    .banner-sec1>p {
+        font-size: 12px;
+        padding-right: 20px;
+        line-height: 15px;
+    }
+
+    .learn-btn {
+        padding: 10px;
+        text-wrap: nowrap;
+    }
+
+    .nav-Link>li {
+        font-size: 12px;
+        text-wrap: nowrap;
+    }
+
+    .btn>.login-btn {
+        font-size: 12px;
+    }
+
+    .btn>button:nth-child(2) {
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:480px) {
+    .banner-sec1>h1 {
+        font-size: 30px;
+    }
+
+    .learn-btn {
+        padding: 7px;
+    }
+
+    .nav-Link>li {
+        font-size: 10px;
+    }
+}
