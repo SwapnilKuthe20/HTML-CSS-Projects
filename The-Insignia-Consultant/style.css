@@ -104,6 +104,10 @@ ul>li>a {
     color: white;
 }
 
+ul>li>a:hover {
+    color: orangered;
+}
+
 .mobile-only {
     display: none;
 }
@@ -557,7 +561,7 @@ svg {
 
     .logo-sec {
         justify-content: flex-start;
-         padding-left: 0px;
+        padding-left: 0px;
     }
 
     .logo-sec>img {
@@ -614,6 +618,11 @@ svg {
 
     .mobile-only {
         display: block;
+    }
+
+    .card>a {
+        padding: 8px 1.7rem;
+        font-size: 10px;
     }
 
     .form-sec .form-inp {
@@ -687,6 +696,8 @@ svg {
         background-color: rgb(8, 8, 109);
         flex-direction: column;
         z-index: 1;
+        padding: 10px;
+        border-radius: 10px;
     }
 
     .nav-links>li {
