@@ -4,16 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
     <title> The Insignia Consultant </title>
 </head>
 
 <body>
-    <div class="main-container">
-        <section class="container">
-            <video src="./Src/Videos/banner-vdo2.mp4" autoplay muted loop class="banner-vdo"></video>
 
+    <header class="header">
+        <div class="vdo-Banner">
+            <video src="./Src/Videos/banner-vdo2.mp4" autoplay muted loop class="banner-vdo"></video>
+        </div>
+
+        <div class="header-sec">
+            <ul class="btn-grp">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <nav class="navbar">
+                <div class="logo-sec">
+                    <img src="./Src/Images/brandLogo.png" alt="brandLogo">
+                    <span>
+                        THE INSIGNIA CONSULTANT
+                    </span>
+                    <hr>
+                </div>
+
+                <i class="fa-solid fa-bars" id="hamburger-menu" onclick="showLinks()"></i>
+
+                <ul class="nav-links " id="nav-links">
+                    <li><a href="#">SOCIAL</a></li>
+                    <li><a href="#">PPC</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">STRATEGY</a></li>
+                    <li><a href="#">BRANDING</a></li>
+                    <li><a href="#">DESIGN+DEV</a></li>
+                </ul>
+
+                <div class="btn-sec">
+                    <button class="btn"> FREE CONSULTATION </button>
+                </div>
+            </nav>
+        </div>
+
+        <section class="banner-container">
             <div class="banner-content">
                 <h1>Clever Ideas captivating results.</h1>
                 <hr>
@@ -21,321 +63,285 @@
                 <h3> Our Research First Approach generates great results for our client.</h3>
             </div>
         </section>
+    </header>
 
-        <header class="header">
-            <ul class="btn-grp">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </header>
-
-        <nav class="navbar">
-            <div class="logo-sec">
-                <img src="./Src/Images/brandLogo.png" alt="brandLogo">
-                <span>
-                    THE INSIGNIA CONSULTANT
-                </span>
-            </div>
-
-            <button class="hamburger" id="hamburger-btn">
-                &#9776;
-            </button>
-
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#">SOCIAL</a></li>
-                <li><a href="#">PPC</a></li>
-                <li><a href="#">SEO</a></li>
-                <li><a href="#">STRATEGY</a></li>
-                <li><a href="#">BRANDING</a></li>
-                <li><a href="#">DESIGN+DEV</a></li>
-            </ul>
-
-            <div class="btn-sec">
-                <button class="btn"> FREE CONSULTATION </button>
-            </div>
-        </nav>
-
-        <section class="card-sec">
-            <div class="card-header">
-
-                <div class="h1-wrapper">
-                    <h1>How TIC help our clients</h1>
-                    <hr>
-                </div>
+    <section class="card-sec">
+        <div class="card-header">
+            <div class="h1-wrapper">
+                <h1>How TIC help our clients</h1>
+                <hr>
             </div>
             <p>"Your success is our passion."</p>
+        </div>
 
-            <div class="card-div">
+        <div class="card-div">
 
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./Src/Images/socialMedia.webp" alt="socialMedia">
-                    </div>
-                    <h1>Social Media</h1>
-                    <p>Maximize your social media presence with our expert strategies. We help you build strong
-                        relationships with your followers, increase brand loyalty, and achieve your marketing
-                        objectives.</p>
-                    <a href="#"> Read More </a>
+            <div class="card">
+                <div class="card-img">
+                    <img src="./Src/Images/socialMedia.webp" alt="socialMedia">
                 </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./Src/Images/Seo.webp" alt="Seo">
-                    </div>
-                    <h1>Seo</h1>
-                    <p>Boost your online visibility with expert SEO services. We help businesses of all sizes increase
-                        organic traffic, improve search engine rankings, and achieve their digital marketing goals.</p>
-
-                    <a href="#"> Read More </a>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./Src/Images/Ppc.webp" alt="ppc">
-                    </div>
-                    <h1>Ppc</h1>
-                    <p>Drive targeted traffic and conversions with our expert PPC management. We create high-performing
-                        campaigns on Google Ads and more to deliver measurable results.</p>
-                    <a> Read More </a>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./Src/Images/digitalStrategy.webp" alt="Digital strategy">
-                    </div>
-                    <h1>Digital strategy</h1>
-                    <p>Develop and execute winning digital strategies that drive growth. We help businesses achieve
-                        their online marketing goals through data-driven insights and integrated campaigns.</p>
-                    <a> Read More </a>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./Src/Images/Branding.svg" alt="Branding">
-                    </div>
-                    <h1> Branding </h1>
-                    <p> Unlock the power of your brand. Our expert branding services help you differentiate yourself
-                        from the competition, increase brand loyalty, and drive business growth. </p>
-                    <a> Read More </a>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./Src/Images/WebDesign.webp" alt="Web Design">
-                    </div>
-                    <h1>Web Design</h1>
-                    <p>Build a powerful online presence with our custom Website Development solutions. We design and
-                        develop responsive, user-friendly websites tailored to your business goals. From seamless UI/UX
-                        to robust backend systems, we ensure your site not only looks great but performs exceptionally
-                        to drive engagement and conversions.</p>
-                    <a> Read More </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="QA-sec">
-            <div class="QA-header">
-                <div class="QA-wrapper">
-                    <h1>Why To Choose TIC?</h1>
-                    <hr>
-                </div>
-            </div>
-            <p>Your Brand Deserves Better That’s Where We Come In</p>
-
-            <ul class="QA-list">
-                <li>
-                    <p>
-                        <span>Creative Meets Calculated: </span>
-                        We blend bold ideas with sharp strategy to craft campaigns that actually work not just look
-                        good.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <span>Research-Led , Result-Driven: </span>
-                        Everything we do is backed by insight, ensuring every move is intentional and aligned with your
-                        goals.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <span>Full-Funnel Thinking: </span>
-                        From awareness to conversion, we map the entire customer journey — and bring it to life.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <span>Agile, Yet Aligned: </span>
-                        We move fast, but we never lose sight of what matters: your brand’s long-term vision.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <span>In-House Experts, Cross-Functional Teams: </span>
-                        Strategists, designers, editors, and analysts — all working together, seamlessly.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <span>Custom Solutions, No Copy-Paste: </span>
-                        Every brand is different. We build tailored strategies, not templated ones.
-                    </p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="client-sec">
-            <div class="client-heading">
-                <div class="client-wrapper">
-                    <h1>Our Clients</h1>
-                    <hr>
-                </div>
+                <h1>Social Media</h1>
+                <p>Maximize your social media presence with our expert strategies. We help you build strong
+                    relationships with your followers, increase brand loyalty, and achieve your marketing
+                    objectives.</p>
+                <a href="#"> Read More </a>
             </div>
 
-            <div class="client-logo-sec">
-                <div class="client-logo">
-                    <img src="Src/Images/Tata.jpeg" alt="Tata">
+            <div class="card">
+                <div class="card-img">
+                    <img src="./Src/Images/Seo.webp" alt="Seo">
                 </div>
-                <div class="client-logo">
-                    <img src="./Src/Images/ArvindStore.jpeg" alt="ArvindStore">
-                </div>
-                <div class="client-logo">
-                    <img src="Src/Images/winnerInstitute.jpeg" alt="winnerInstitute">
-                </div>
-                <div class="client-logo">
-                    <img src="./Src/Images/FashionWorld.jpeg" alt="FashionWorld">
-                </div>
-                <div class="client-logo">
-                    <img src="Src/Images/RereProperty.jpeg" alt="RereProperty">
-                </div>
-                <div class="client-logo">
-                    <img src="Src/Images/shirtfactory.jpeg" alt="shirtfactory">
-                </div>
-                <div class="client-logo">
-                    <img src="Src/Images/khamla.jpeg" alt="khamla">
-                </div>
-                <div class="client-logo">
-                    <img src="./Src/Images/carmania.jpeg" alt="carmania">
-                </div>
+                <h1>Seo</h1>
+                <p>Boost your online visibility with expert SEO services. We help businesses of all sizes increase
+                    organic traffic, improve search engine rankings, and achieve their digital marketing goals.</p>
+
+                <a href="#"> Read More </a>
             </div>
-        </section>
 
-        <section class="form-sec">
-            <form action="" class="form">
-                <h1>Consultation</h1>
-                <p>Please submit this form and we will be in touch to schedule a consultation.</p>
-
-                <div class="form-inp">
-                    <input type="text" placeholder="Full name*">
-                    <input type="email" placeholder="Email*">
+            <div class="card">
+                <div class="card-img">
+                    <img src="./Src/Images/Ppc.webp" alt="ppc">
                 </div>
+                <h1>Ppc</h1>
+                <p>Drive targeted traffic and conversions with our expert PPC management. We create high-performing
+                    campaigns on Google Ads and more to deliver measurable results.</p>
+                <a> Read More </a>
+            </div>
 
-                <div class="form-inp">
-                    <input type="text" placeholder="Title*">
-                    <input type="text" placeholder="Company*">
+            <div class="card">
+                <div class="card-img">
+                    <img src="./Src/Images/digitalStrategy.webp" alt="Digital strategy">
                 </div>
+                <h1>Digital strategy</h1>
+                <p>Develop and execute winning digital strategies that drive growth. We help businesses achieve
+                    their online marketing goals through data-driven insights and integrated campaigns.</p>
+                <a> Read More </a>
+            </div>
 
-                <div class="form-inp">
-                    <input type="number" placeholder="Contact Number*">
-                    <input type="text" placeholder="Website">
+            <div class="card">
+                <div class="card-img">
+                    <img src="./Src/Images/Branding.svg" alt="Branding">
                 </div>
+                <h1> Branding </h1>
+                <p> Unlock the power of your brand. Our expert branding services help you differentiate yourself
+                    from the competition, increase brand loyalty, and drive business growth. </p>
+                <a> Read More </a>
+            </div>
 
-                <div class="form-inp">
-                    <input type="text" placeholder="Related Industry*">
-                    <input type="text" placeholder="Company Size">
+            <div class="card">
+                <div class="card-img">
+                    <img src="./Src/Images/WebDesign.webp" alt="Web Design">
                 </div>
+                <h1>Web Design</h1>
+                <p>Build a powerful online presence with our custom Website Development solutions. We design and
+                    develop responsive, user-friendly websites tailored to your business goals. From seamless UI/UX
+                    to robust backend systems, we ensure your site not only looks great but performs exceptionally
+                    to drive engagement and conversions.</p>
+                <a> Read More </a>
+            </div>
+        </div>
+    </section>
 
-                <div class="form-inp">
-                    <textarea name="" id="" rows="10"></textarea>
-                </div>
+    <section class="QA-sec">
+        <div class="QA-header">
+            <div class="QA-wrapper">
+                <h1>Why To Choose TIC?</h1>
+                <hr>
+            </div>
+        </div>
+        <p>Your Brand Deserves Better That’s Where We Come In</p>
 
-                <button> Book Consultancy </button>
-            </form>
-        </section>
+        <ul class="QA-list">
+            <li>
+                <p>
+                    <span>Creative Meets Calculated: </span>
+                    We blend bold ideas with sharp strategy to craft campaigns that actually work not just look
+                    good.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <span>Research-Led , Result-Driven: </span>
+                    Everything we do is backed by insight, ensuring every move is intentional and aligned with your
+                    goals.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <span>Full-Funnel Thinking: </span>
+                    From awareness to conversion, we map the entire customer journey — and bring it to life.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <span>Agile, Yet Aligned: </span>
+                    We move fast, but we never lose sight of what matters: your brand’s long-term vision.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <span>In-House Experts, Cross-Functional Teams: </span>
+                    Strategists, designers, editors, and analysts — all working together, seamlessly.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <span>Custom Solutions, No Copy-Paste: </span>
+                    Every brand is different. We build tailored strategies, not templated ones.
+                </p>
+            </li>
+        </ul>
+    </section>
 
-        <footer class="footer-sec">
-            <div class="footer-content">
-                <div class="footer-container">
-                    <div class="footer-logo">
-                        <div class="logo-sec">
-                            <img src="./Src/Images/brandLogo.png" alt="brandLogo">
-                            <span>
-                                THE INSIGNIA CONSULTANT
-                            </span>
+    <section class="client-sec">
+        <div class="client-heading">
+            <div class="client-wrapper">
+                <h1>Our Clients</h1>
+                <hr>
+            </div>
+        </div>
+
+        <div class="client-logo-sec">
+            <div class="client-logo">
+                <img src="Src/Images/Tata.jpeg" alt="Tata">
+            </div>
+            <div class="client-logo">
+                <img src="./Src/Images/ArvindStore.jpeg" alt="ArvindStore">
+            </div>
+            <div class="client-logo">
+                <img src="Src/Images/winnerInstitute.jpeg" alt="winnerInstitute">
+            </div>
+            <div class="client-logo">
+                <img src="./Src/Images/FashionWorld.jpeg" alt="FashionWorld">
+            </div>
+            <div class="client-logo">
+                <img src="Src/Images/RereProperty.jpeg" alt="RereProperty">
+            </div>
+            <div class="client-logo">
+                <img src="Src/Images/shirtfactory.jpeg" alt="shirtfactory">
+            </div>
+            <div class="client-logo">
+                <img src="Src/Images/khamla.jpeg" alt="khamla">
+            </div>
+            <div class="client-logo">
+                <img src="./Src/Images/carmania.jpeg" alt="carmania">
+            </div>
+        </div>
+    </section>
+
+    <section class="form-sec">
+        <form action="" class="form">
+            <h1>Consultation</h1>
+            <p>Please submit this form and we will be in touch to schedule a consultation.</p>
+
+            <div class="form-inp">
+                <input type="text" placeholder="Full name*">
+                <input type="email" placeholder="Email*">
+            </div>
+
+            <div class="form-inp">
+                <input type="text" placeholder="Title*">
+                <input type="text" placeholder="Company*">
+            </div>
+
+            <div class="form-inp">
+                <input type="number" placeholder="Contact Number*">
+                <input type="text" placeholder="Website">
+            </div>
+
+            <div class="form-inp">
+                <input type="text" placeholder="Related Industry*">
+                <input type="text" placeholder="Company Size">
+            </div>
+
+            <div class="form-inp">
+                <textarea name="" id="" rows="10"></textarea>
+            </div>
+
+            <button> Book Consultancy </button>
+        </form>
+    </section>
+
+    <footer class="footer-sec">
+        <div class="footer-content">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <div class="footer-logo-sec">
+                        <img src="./Src/Images/brandLogo.png" alt="brandLogo">
+                        <span>
+                            THE INSIGNIA CONSULTANT
+                        </span>
+                    </div>
+
+                    <div class="social-logo-sec">
+                        <div class="logo-social">
+                            <img src="Src/Images/insta.svg" alt="">
                         </div>
 
-                        <div class="logo-sec">
-                            <div class="logo-social">
-                                <img src="Src/Images/insta.svg" alt="">
-                            </div>
+                        <div class="logo-social">
+                            <img src="./Src/Images/facebook.svg" alt="">
+                        </div>
 
-                            <div class="logo-social">
-                                <img src="./Src/Images/facebook.svg" alt="">
-                            </div>
+                        <div class="logo-social">
+                            <img src="./Src/Images/twitter.svg" alt="">
+                        </div>
 
-                            <div class="logo-social">
-                                <img src="./Src/Images/twitter.svg" alt="">
-                            </div>
+                        <div class="logo-social">
+                            <img src="./Src/Images/linkedin.svg" alt="">
+                        </div>
 
-                            <div class="logo-social">
-                                <img src="./Src/Images/linkedin.svg" alt="">
-                            </div>
-
-                            <div class="logo-social">
-                                <img src="./Src/Images/whatsapp.svg" alt="">
-                            </div>
+                        <div class="logo-social">
+                            <img src="./Src/Images/whatsapp.svg" alt="">
                         </div>
                     </div>
+                </div>
 
-                    <div class="footer-ourServices">
-                        <p>Our Services</p>
+                <div class="footer-ourServices">
+                    <p>Our Services</p>
 
-                        <ul>
-                            <li><a href="">Social Media</a></li>
-                        </ul>
+                    <ul>
+                        <li><a href="">Social Media</a></li>
+                    </ul>
 
-                        <ul>
-                            <li><a href="">PPC Advertising</a></li>
-                        </ul>
+                    <ul>
+                        <li><a href="">PPC Advertising</a></li>
+                    </ul>
 
-                        <ul>
-                            <li><a href="">SEO Services</a></li>
-                        </ul>
+                    <ul>
+                        <li><a href="">SEO Services</a></li>
+                    </ul>
 
-                        <ul>
-                            <li><a href="">Digital Strategy</a></li>
-                        </ul>
+                    <ul>
+                        <li><a href="">Digital Strategy</a></li>
+                    </ul>
 
-                        <ul>
-                            <li><a href="">Branding</a></li>
-                        </ul>
+                    <ul>
+                        <li><a href="">Branding</a></li>
+                    </ul>
 
-                        <ul>
-                            <li><a href="">Web Design</a></li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li><a href="">Web Design</a></li>
+                    </ul>
+                </div>
 
-                    <div class="footer-contact">
-                        <h1>Get In Touch</h1>
+                <div class="footer-contact">
+                    <h1>Get In Touch</h1>
 
-                        <p>Phone: +91-7276335565/+91-7123148050</p>
+                    <p>Phone: +91-7276335565/+91-7123148050</p>
 
-                        <h1>Business Enquiry:</h1>
-                        <p>Email: crm@theinsigniac.com</p>
+                    <h1>Business Enquiry:</h1>
+                    <p>Email: crm@theinsigniac.com</p>
 
-                        <h1>Job Enquiry:</h1>
-                        <p>Email: hr@theinsigniac.com</p>
-                    </div>
+                    <h1>Job Enquiry:</h1>
+                    <p>Email: hr@theinsigniac.com</p>
                 </div>
             </div>
+        </div>
 
-            <div class="footer-info">
-                <p>© TIC. All rights reserved.</p>
-            </div>
-        </footer>
-
-
-    </div>
+        <div class="footer-info">
+            <p>© TIC. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 
