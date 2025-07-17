@@ -82,18 +82,13 @@
     height: 35px;
     background-color: orangered;
     border: none;
+    text-align: left;
 }
 
 #hamburger-menu {
     font-size: 25px;
     display: none;
 }
-
-/* #hamburger-cross {
-    font-size: 25px;
-    display: none;
-} */
-
 
 .nav-links {
     display: flex;
@@ -107,6 +102,21 @@
 ul>li>a {
     text-decoration: none;
     color: white;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.mobile-only button {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: none;
+    background-color: orangered;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
 }
 
 .btn-sec>.btn {
@@ -540,8 +550,32 @@ svg {
         display: none;
     }
 
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-sec {
+        justify-content: flex-start;
+         padding-left: 0px;
+    }
+
+    .logo-sec>img {
+        max-width: 40px;
+    }
+
+    .logo-sec>span {
+        font-size: 14px;
+        padding: 0 8px;
+    }
+
+    .logo-sec>hr {
+        height: 30px;
+    }
+
     .nav-links {
         right: 3% !important;
+        font-size: 10px;
     }
 
     .btn-sec>.btn {
@@ -576,6 +610,10 @@ svg {
     header .banner-content h3 {
         font-size: 20px;
         margin: 10px 0;
+    }
+
+    .mobile-only {
+        display: block;
     }
 
     .form-sec .form-inp {
@@ -646,14 +684,13 @@ svg {
         position: absolute;
         top: 70%;
         right: 40%;
-        padding: 20px;
         background-color: rgb(8, 8, 109);
         flex-direction: column;
         z-index: 1;
     }
 
     .nav-links>li {
-        padding: 10px;
+        padding: 8px;
     }
 
     .nav-links.active {
