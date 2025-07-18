@@ -12,3 +12,24 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('fa-xmark');
     navLinks.classList.toggle('active');
 });
+
+// background color or scroll ::
+// Scroll event window p hi run krta h
+
+
+window.addEventListener("scroll", () => {
+    let header = document.getElementById("Website-header");
+
+    if (window.scrollY > 40) {
+        header.classList.add("scrolled")
+    } else {
+        header.classList.remove("scrolled")
+    }
+})
+
+
+
+
+
+
+

@@ -5,30 +5,33 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.vdo-Banner {
-    width: 100%;
-    height: 70vh;
-    position: relative;
+#Website-header {
+    position: fixed;
     top: 0;
     left: 0;
-}
-
-.vdo-Banner>video {
     width: 100%;
-    height: 70vh;
-    object-fit: cover;
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
 }
 
-.header-sec>.btn-grp {
+
+#Website-header.scrolled {
+    background-color: #043362;
+}
+
+.header-sec .btn-grp {
+    position: absolute;
+    top: 0;
+    right: 10px;
     display: flex;
     gap: 15px;
     list-style: none;
     padding: 10px;
-    position: absolute;
-    top: 0;
-    right: 10px;
     font-size: 14px;
     font-weight: 500;
+    color: aliceblue;
+    z-index: 999;
 }
 
 .btn-grp>li:nth-child(1) {
@@ -41,20 +44,20 @@
     cursor: pointer;
 }
 
-.navbar {
+.header-sec .navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 8px;
+    padding: 32px 20px 15px;
     color: white;
-    background: transparent;
-    position: absolute;
+    position: relative;
     top: 5%;
     left: 0;
     font-weight: 600;
     cursor: pointer;
 }
+
 
 .logo-sec {
     display: flex;
@@ -134,10 +137,24 @@ ul>li>a:hover {
     cursor: pointer;
 }
 
-.banner-container {
+.vdo-Banner {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.vdo-Banner video {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.banner-content {
     position: absolute;
     width: 60%;
-    top: 16%;
+    top: 30%;
     left: 17%;
     color: white;
     padding: 0 18px;
@@ -495,16 +512,12 @@ ul>li>a:hover {
     cursor: pointer;
 }
 
-svg {
-    color: white;
-}
-
 .footer-ourServices,
 .footer-contact {
     margin: 15px 10px;
 }
 
-.footer-ourServices>p {
+.footer-ourServices p {
     font-size: 22px;
     margin: 0 0 8px;
     font-weight: 700;
@@ -582,7 +595,7 @@ svg {
         font-size: 10px;
     }
 
-    .btn-sec>.btn {
+    .btn-sec .btn {
         font-size: 12px;
         padding: 8px 14px;
         border: none;
@@ -596,24 +609,48 @@ svg {
         display: none;
     }
 
-    .header .banner-container {
-        width: 80%;
-        left: 10%;
-        padding: 0 5px;
+    #hamburger-menu {
+        display: block;
     }
 
-    header .banner-content h1 {
-        font-size: 2rem;
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70%;
+        right: 40%;
+        background-color: rgb(8, 8, 109);
+        flex-direction: column;
+        z-index: 1;
+        padding: 10px;
+        border-radius: 10px;
     }
 
-    header .banner-content h2 {
-        font-size: 22px;
-        margin: 10px 0;
+    .nav-links>li {
+        padding: 8px;
     }
 
-    header .banner-content h3 {
-        font-size: 20px;
-        margin: 10px 0;
+    .nav-links.active {
+        display: block;
+    }
+
+    .banner-content {
+        top: 25%;
+        left: 14%;
+        padding: 0 15px;
+    }
+
+    .banner-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .banner-content h2 {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+
+    .banner-content h3 {
+        font-size: 14px;
+        margin: 15px 0;
     }
 
     .mobile-only {
@@ -683,7 +720,7 @@ svg {
     }
 }
 
-@media(max-width:1200px) {
+@media(min-width:768px) and (max-width:1200px) {
     #hamburger-menu {
         display: block;
     }
@@ -708,8 +745,8 @@ svg {
         display: block;
     }
 
-    .banner-container {
-        top: 18%;
+    .banner-content {
+        top: 30%;
         left: 14%;
         padding: 0 15px;
     }
